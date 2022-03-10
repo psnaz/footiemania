@@ -3,7 +3,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-const shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
 
@@ -20,8 +20,14 @@ function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showQuestion() {
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
 
+    })
 }
 
 function selectAnswer() {
@@ -30,7 +36,7 @@ function selectAnswer() {
 
 const questions = [
     {
-        question: 'What is 2 + 2',
+        question: 'What is 2 + 2?',
         answers: [
             { tetxt: '4', correct: true },
             { tetxt: '22', correct: false },
