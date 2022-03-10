@@ -44,15 +44,34 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 }
 
 const questions = [
     {
         question: 'What is 2 + 2?',
         answers: [
-            { tetxt: '4', correct: true },
-            { tetxt: '22', correct: false },
+            { text: '4', correct: true },
+            { text: '22', correct: false },
         ]
     }
 ]
