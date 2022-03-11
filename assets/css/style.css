@@ -8,18 +8,18 @@
 }
 
 /*:root*/
-#changing-wallpaper{
+#changing-wallpaper {
     --hue-neutral: 200;
     --hue-wrong: 0;
     --hue-correct: 145;
 }
 
-.game-area{
+.game-area {
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 30vh;
     justify-content: center;
     align-items: center;
@@ -130,4 +130,35 @@ h1{
     font-family: Black Ops One;
     font-size: large;
     color: white;
+}
+
+/* Code taken and modified from CI Love Running Walkthrough project tutorial */
+
+/* Media queries */
+
+/* For larger to medium screen size from 1200px wide and smaller */
+@media screen and (max-width: 1200px) {
+    #changing-wallpaper {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    #container {
+        padding: 10px 10px;
+    }
+
+}
+
+/* For medium screen sizes from 950px wide and smaller */
+@media screen and (max-width: 950px) {
+    #welcome {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hero {
+        align-items: center;
+    }
+
 }
