@@ -108,3 +108,25 @@ h1{
     width: 30px;
     height: auto;
 }
+
+#hero{
+    height: 50vh;
+    background-image: url(../images/footiemania.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome{
+    background-color: #91BB5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome p{
+    font-family: Black Ops One;
+    font-size: large;
+    color: white;
+}
