@@ -50,7 +50,7 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    setStatusClass(document.body, correct)           // BODY 
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -58,7 +58,8 @@ function selectAnswer(e) {
 
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Restart'
+        startButton.innerText = "Let's play again!" // My own content
+        // startButton.innerText = 'Restart' // original
         startButton.classList.remove('hide')
     }
 }
@@ -77,6 +78,7 @@ function clearStatusClass(element) {
     element.classList.remove('wrong')
 }
 
+// My own content for the questions
 const questions = [
     {
         question: 'He is one of the best football players in history, he is Argentinian and ruined his career because of drugs. Who is he?',
