@@ -169,7 +169,7 @@ const questions = [
         ]
     },
     {
-        question: 'He plays as a left winger for Chelsea, they signed him from Borussia Dortmund, but he is from the USA. Who is he? Who is he?',
+        question: 'He plays as a left winger for Chelsea, they signed him from Borussia Dortmund, but he is from the USA. Who is he?',
         answers: [
             { text: 'Giovanni Reyna', correct: false },
             { text: 'Christian Pulisic', correct: true },
