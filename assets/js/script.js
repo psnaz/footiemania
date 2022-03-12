@@ -77,10 +77,8 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct');
-        //incrementScore(); //My code taken from CI Love Maths Walkthrough Project!!!
     } else {
         element.classList.add('wrong');
-        //incrementWrongAnswer();//My code taken from CI Love Maths Walkthrough Project!!!
     }
 }
 
