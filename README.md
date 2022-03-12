@@ -1,11 +1,65 @@
 # FOOTIEMANIA
 
+## Welcome to Footiemania, the online quiz for people who LOVE all about football, including the facts!
+
 ![Footiemania mockup](assets/images/footiemania-mockup.png)
 
-Welcome to Footiemania, the online quiz for people who LOVE all about football, including the facts!
 
 The purpose of this quiz is to have fun and test the user’s knowledge about the game.
 This website is designed to be responsive and accessible on a range of devices, making it easy to navigate for the audience.
+
+## Showcase
+
+A deployed link to the website can be found [here.](https://psnaz.github.io/footiemania/)
+
+
+## Features
+
+### Logo Area
+![Logo area screenshot](assets/images/logo-area.png)
+
+
+###  Hero Image
+![Hero image](assets/images/footiemania.jpg)
+
+
+### Tagline
+![Tagline screenshot](assets/images/tagline.png)
+
+
+### Game Area Displayed Before Start
+![Game area screenshot](assets/images/game-area.png)
+
+
+### Question Area
+
+#### Question Area Displayed Once START Button Displayed 
+![Question area screenshot](assets/images/question-area-start.png)
+
+START BUTTON
+![Start button screenshot](assets/images/start-button.png)
+
+#### Question Area - CORRECT ANSWER DISPLAYED
+![Question area with a correct answer screenshot](assets/images/correct-answer.png)
+
+#### Question Area - WRONG ANSWER DISPLAYED
+![Question area with a wrong answer screenshot](assets/images/wrong-answer.png)
+
+
+### Next Button
+![Next button screenshot](assets/images/next-button.png)
+
+
+### Score Area
+![Score area screenshot](assets/images/score-area.png)
+
+
+
+## User Experience (UX)
+
+### User Stories
+
+
 
 
 
