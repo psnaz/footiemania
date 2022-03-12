@@ -60,6 +60,16 @@ START BUTTON
 ### User Stories
 
 
+## Technologies Used
+
+### Languages Used
+*HTML5
+*CSS3
+*Javascript
+
+
+
+
 
 
 
