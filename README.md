@@ -1,3 +1,17 @@
+# FOOTIEMANIA
+
+![Footiemania mockup](assets/images/footiemania-mockup.png)
+
+Welcome to Footiemania, the online quiz for people who LOVE all about football, including the facts!
+
+The purpose of this quiz is to have fun and test the user’s knowledge about the game.
+This website is designed to be responsive and accessible on a range of devices, making it easy to navigate for the audience.
+
+
+
+
+DELETE ALL BELOW
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome psnaz,
