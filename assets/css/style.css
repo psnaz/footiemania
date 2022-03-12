@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&display=swap');
 
 /*Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, link in Readme file */
+
+/* --------- Global style */
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
@@ -33,7 +36,7 @@
     margin: 0;
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
@@ -50,6 +53,8 @@ original class .body.wrong */
     --hue: var(--hue-wrong);
 }
 
+/* Game layout */
+
 .container {
     width: 800px;
     max-width: 80%;
@@ -58,6 +63,8 @@ original class .body.wrong */
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 }
+
+/* --------- Buttons */
 
 .btn-grid {
     display: grid;
@@ -107,6 +114,9 @@ original class .body.wrong */
 }
 
 /* Code taken and modified from CI Love Running Walkthrough project tutorial */
+
+/* --------- Score area */
+
 .score-area {
     margin: 5px auto;
     width: 50%;
@@ -121,6 +131,9 @@ original class .body.wrong */
 }
 
 /* My own code based on my own knowledge from CI tutorials */
+
+/* --------- Heading */
+
 h1 {
     font-family: Black Ops One;
 }
@@ -162,8 +175,9 @@ h1 {
     color: white;
 }
 
+/* Code taken and modified from CI Love Running Walkthrough project tutorial */
 
-/* Media queries */
+/* ---------- Media queries */
 
 /* For larger to medium screen size from 1200px wide and smaller */
 @media screen and (max-width: 1200px) {
