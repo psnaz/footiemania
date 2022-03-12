@@ -12,6 +12,10 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 })
 
+/**
+ * Add what each function does
+ */
+
 function startGame() {
     console.log('Started')
     startButton.classList.add('hide')
@@ -76,6 +80,29 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
+}
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ * - code from CI Love Maths Walkthrough Project
+ */
+function incrementScore() {
+
+    let oldscore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldscore;
+
+}
+
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ *  - code from CI Love Maths Walkthrough Project
+ */
+
+ function incrementWrongAnswer() {
+
+    let oldscore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldscore;
+
 }
 
 // My own content for the questions
