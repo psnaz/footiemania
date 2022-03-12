@@ -106,6 +106,20 @@ original class .body.wrong */
     display: none;
 }
 
+/* Code taken and modified from CI Love Running Walkthrough project tutorial */
+.score-area {
+    margin: 5px auto;
+    width: 50%;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores {
+    display: inline-flex;
+    padding: 0 25px;
+}
+
 /*My own code based on my own knowledge from CI tutorials */
 h1 {
     font-family: Black Ops One;
@@ -148,7 +162,6 @@ h1 {
     color: white;
 }
 
-/* Code taken and modified from CI Love Running Walkthrough project tutorial */
 
 /* Media queries */
 
