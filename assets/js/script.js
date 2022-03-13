@@ -1,3 +1,5 @@
+/*Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, please see the link in Readme file */
+
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -13,7 +15,7 @@ nextButton.addEventListener('click', () => {
 })
 
 /**
- * Add what each function does
+ * Starts the game when start button's clicked, questions are shuffled and a question gets set
  */
 
 function startGame() {
@@ -25,10 +27,18 @@ function startGame() {
     setNextQuestion()
 }
 
+/**
+ * Sets the next question to be displayed when next button's pressed
+ */
+
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
+/**
+ * Displays question and enables the buttons to indicate correct or incorrect answers 
+ */
 
 function showQuestion(question) {
     questionElement.innerText = question.question
@@ -44,6 +54,10 @@ function showQuestion(question) {
     })
 }
 
+/**
+ * Enables the next button to reset the question area to display the next question
+ */
+
 function resetState() {
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
@@ -51,15 +65,21 @@ function resetState() {
     }
 }
 
+/**
+ * Enables the score being taken while the next question is being
+ * selected from the array, if no more questions, Next button turns
+ * into Let's play again so the user can restart the game
+ */
+
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.querySelector("#score"), correct) //My code
+    setStatusClass(document.querySelector("#score"), correct)   //My code
     if (correct) {                                              //My code
         incrementScore()                                        // My code
     } else {                                                    // My code
         incrementWrongAnswer()                                  // My code
-    }                                                       // My code  
+    }                                                           // My code  
     setStatusClass(document.querySelector("#game-area"), correct)           
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -68,10 +88,15 @@ function selectAnswer(e) {
 
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = "Let's play again!" // My own content
+        startButton.innerText = "Let's play again!"            // My own content
         startButton.classList.remove('hide')
     }
 }
+
+/**
+ * Determines whether the correct answer button 
+ * has been selected by the user
+ */
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
@@ -81,6 +106,11 @@ function setStatusClass(element, correct) {
         element.classList.add('wrong');
     }
 }
+
+/**
+ * Clears the action - 
+ * whether correct or incorrect answer has been selected
+ */
 
 function clearStatusClass(element) {
     element.classList.remove('correct')
@@ -110,7 +140,10 @@ function incrementScore() {
 
 }
 
-// My own content for the questions
+/**
+ * My own content for the questions but code taken and modified from 'Build a Quiz App with JavaScript'by WebDev Simplified 
+ *  */ 
+
 const questions = [
     {
         question: 'He is one of the best football players in history, he is Argentinian and ruined his career because of drugs. Who is he?',
