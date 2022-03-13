@@ -4,56 +4,86 @@
 
 ![Footiemania mockup](assets/images/footiemania-mockup.png)
 
+Do you know that Pele scored more than 1200 goals in his career? Or which country won the first world cup? Yes, it was Uruguay!  So, if facts like these make you smile, let’s play! Press the yellow start button and enjoy testing your own knowledge.
 
-The purpose of this quiz is to have fun and test the user’s knowledge about the game.
-This website is designed to be responsive and accessible on a range of devices, making it easy to navigate for the audience.
+Footiemania is a football quiz application for football enthusiasts of all ages who love everything about this sport, including the generally “boring” stuff like facts about the football players and their backgrounds, the teams, the premier league and various other competitions. But these facts are only boring if you’re not into football. If you are, whether you get excited about chasing the football on the pitch or watching the game from the comfort of your home, get ready and have some fun! 
+
+---
 
 ## Showcase
 
-A deployed link to the website can be found [here.](https://psnaz.github.io/footiemania/)
+- A deployed link to the website can be found [here.](https://psnaz.github.io/footiemania/) 
+- The purpose of this quiz is to have fun and test the user's knowledge about the game.
+- This one page quiz application is designed to be responsive and accessible on a range of devices, making it easy to navigate for the audience.
 
+---
 
 ## Features
 
 ### Logo Area
+- The top of the page includes a green logo area.
+
 ![Logo area screenshot](assets/images/logo-area.png)
 
 
-###  Hero Image
+###  Landing Page Image
+- Right below the logo area is a striking photograph of a goalkeeper letting a goal in.
+
 ![Hero image](assets/images/footiemania.jpg)
 
 
 ### Tagline
+- Below the hero image is a welcoming tagline that should entice the user to start playing this quiz.
+
 ![Tagline screenshot](assets/images/tagline.png)
 
 
 ### Game Area Displayed Before Start
+
+- The bottom part of the screen is dedicated to the responsive part of the game area. It includes a yellow START button and below score count set to 0 for both, correct and incorrect answers.
+
 ![Game area screenshot](assets/images/game-area.png)
 
 
 ### Question Area
 
-#### Question Area Displayed Once START Button Displayed 
+#### Question Area Displayed Once START Button Displayed
+- Once the start button's pressed, a white question area appears. It includes a quiz question and 4 interactive light blue buttons with a choice of answers.
+
 ![Question area screenshot](assets/images/question-area-start.png)
 
-START BUTTON
-![Start button screenshot](assets/images/start-button.png)
 
 #### Question Area - CORRECT ANSWER DISPLAYED
+- When the user clicks one of the blue answer buttons and chooses the correct answer the answer buttons change colour: the correct answer button turns green, the rest of the answer buttons for wrong answers turn red. Also, the game area background colour turns green to indicate the success.
+- At the same time, yellow button NEXT appears and the score in the correct answers increases by 1.
+
 ![Question area with a correct answer screenshot](assets/images/correct-answer.png)
 
 #### Question Area - WRONG ANSWER DISPLAYED
+- When the user clicks one of the blue answer buttons and chooses a wrong answer the answer buttons change colour: the correct answer button turns green, the rest of the answer buttons for wrong answers turn red. Also, the game area background colour turns red to indicate that a wrong answer's been chosen.
+- At the same time, yellow button NEXT appears and the score in the incorrect answers increases by 1.
+
 ![Question area with a wrong answer screenshot](assets/images/wrong-answer.png)
 
 
 ### Next Button
+- To be able to proceed to the next question the user has to press the NEXT yellow button. 
+- When the NEXT button is pressed, the next question is displayed. 
+
 ![Next button screenshot](assets/images/next-button.png)
 
 
 ### Score Area
+- The score area is there to count the score that increases or decreases always by 1 depending if the user chooses a correct or incorrect answer.
+
 ![Score area screenshot](assets/images/score-area.png)
 
 
+### QUESTIONS
+- There are currently 11 questions only stored in the js file of the quiz game.
+- Potentially, hundreds of questions could be added to this game.
+
+---
 
 ## User Experience (UX)
 
