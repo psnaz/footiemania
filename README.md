@@ -113,8 +113,13 @@ The score count feature can monitor the players’ improvement and/or can enable
 - Various quizzes researched on Google and Youtube
 - Quiz questions created in cooperation with my 10 year old football savvy son, Martin Snazle, who loves quizzing me on all football and keeps laughing at my lack of knowledge
 - Application outlined, researched and written in Google docs
-- Color palette created in canva.com
-- Mockup design created in canva.com
+
+- Colour palette created in canva.com
+
+![Color palette screenshot](assets/images/colour-palette.png)
+
+- Mockup design created in canva.com and can be viewed [here.](https://www.canva.com/design/DAE435igaz4/8yfnZsaV_IAiWw6dCBzHgQ/edit?utm_content=DAE435igaz4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 - Planning Session 1 with my mentor (Call 1)
 - GitHub repository created [here](https://github.com/psnaz/footiemania)
 - Project broke down into smaller tasks and To-Do List created in Google docs
@@ -133,6 +138,16 @@ The score count feature can monitor the players’ improvement and/or can enable
 - CSS3
 - JavaScript
 
+### Frameworks, Libraries and Programs Used
+
+
+- unsplash.com: Unsplash was used to find the hero image: image used taken by ![Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
+- Canva.com: Canva Color Palette Generator was used to create a color palette and Canva was used to create a mock-up design, and for resizing and editing images.
+- Google Fonts: Google fonts were used to import the ‘Black Ops One’ and ‘Montserrat light 400’ fonts into the style.css files. 
+- Git: Git was used for version control by utilizing the Gitpod terminal - to commit to Git and push to GitHub
+- GitHub: Github is used to store the project's code after being pushed from Git.
+- GoogleDev Tools used to see the element positioning and responsiveness, and view JavaScript console
+- TinyPNG was used to compress the images
 
 
 
