@@ -149,121 +149,82 @@ The score count feature can monitor the players’ improvement and/or can enable
 - GoogleDev Tools used to see the element positioning and responsiveness, and view JavaScript console
 - TinyPNG was used to compress the images
 
+---
+
+## Credits 
+
+### Code
+
+#### The majority of the code came from:
+-[’Build A Quiz App With JavaScript’ tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k) by Web Dev Simplified.
+-CI Love Maths Walkthrough project 
+
+#### Otherwise based on the Diploma in Software Development study materials and my notes taken while going through the materials.
+
+#### Other materials studied:
+- [Build a Quiz in Javascript](https://www.kindsonthegenius.com/javascript/quiz-application-in-javascript-with-validation-step-by-step/) by Kindson The Genius
+- [Building a Simple Quiz with HTML, CSS and JavaScript](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp) by Sulaimon Olaniran
+- [Create a Quiz App with Timer using HTML CSS & JavaScript](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) by Coding Nepal
+- [How to Make a Basic JavaScript Quiz](https://www.wikihow.com/Make-a-Basic-JavaScript-Quiz) by wikiHow
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/): Used to extend my knowledge and deepen understanding of HTML, CSS and JavaScript 
 
 
+### Content
+
+- All content was written by the developer. The questions and answers were created together as a mum and son project with Martin Snazle – my ten-year old boy that loves playing football more than anything. Martin also loves watching football and quizzing his mum about football daily.  
 
 
+### Media
+
+- Hero image taken by ![Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
+ downloaded from unspleash.com
 
 
+### Acknowledgements
 
+- My ten year old son, Martin Snazle, who loves football more than anything, and who also loves quizzing me on football and laugh when I don’t know much. I treasure those moments!
 
-DELETE ALL BELOW
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome psnaz,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- My Mentor Celestine Okoro for his helpful feedback.
+- Tutor support at Code Institute for their support.
+- Stephen Seagrave for his most valuable advice recorded as [Milestone 1 Planning with Stephen Seagrave.](https://www.youtube.com/watch?v=06tXTbm-DxI&feature=youtu.be)
+- Code Institute Slack Community for all their advice and support.
 
 ---
 
-Happy coding!
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator Services, Lighthouse Chrome Extension and JS Hint were used to validate the project page to ensure that there were no syntax errors in the project.
+
+- W3C Markup Validator - Results
+- W3C CSS Validator - Results
+- Lighthouse Chrome Extension - Results
+- [JS HInt](https://jshint.com/) 
+
+
+--- 
+
+## Unfixed Bugs
+
+---
+
+## Deployment
+
+This site was deployed to GitHub pages by taking the following steps:
+1. In the GitHub repository click on the settings tab on the right hand site
+2. Scroll down to the GitHub pages heading that informs you that 'Pages setting now has its own tab' and click on the link next to it.
+3. Select source and select 'main' and save, this will refresh the page.
+4. Scroll down to the GitHub Pages section again to see the deployed link and click on it.
+5. Please note that it might take a few minutes for Github to build the site.
+
+---
+
+## Forking the GitHub Repository OR Making a Local Clone
+
+If you are interested how to fork this repository or how to make a local clone, this information can be found in Github documentation [here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+---
+
+## NOTES
+
+This project has been a very steep learning curve. Although I find the JavaScript principle understandable to use JavaScript in practice and write my own code at this point is very challenging for me. I understand that I will have to practise a lot to feel confident using it and to become a proper JavaScript user. 
