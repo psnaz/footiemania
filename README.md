@@ -82,6 +82,7 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 
 
 ### QUESTIONS
+
 - There are currently 11 questions only stored in the js file of the quiz game.
 - Potentially, hundreds of questions could be added to this game.
 
@@ -89,7 +90,7 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 
 ## User Experience (UX)
 
-The target audience (end users) of this project are football enthusiasts of all ages, predominantly boys between 10-14 who _“live and breathe”_ football like my son. 
+The target audience (end users) of this project are football enthusiasts of all ages, predominantly boys between 10-14 who _“live and breathe”_ football like my son. The target audience can be very similar with users of a Nintendo game FIFA20.
 
 The end user is looking for a fun way to be entertained while testing and also expanding their knowledge about football.
 
@@ -103,6 +104,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 - As an end user I want to receive clear instructions to be able to understand what this quiz is about, how to play it and score points.
 - As an end user I want to be able to read and understand the questions and answers easily.
 - As an end user I want to be able to play this quiz game on a variety of devices, like a mobile phone or laptop, but also a desktop.
+
 
 ## Strategy 
 
@@ -228,3 +230,6 @@ If you are interested how to fork this repository or how to make a local clone, 
 ## NOTES
 
 This project has been a very steep learning curve. Although I find the JavaScript principle understandable to use JavaScript in practice and write my own code at this point is very challenging for me. I understand that I will have to practise a lot to feel confident using it and to become a proper JavaScript user. 
+
+My original plan was to create an interactive football quiz with sound effects like the football fans cheering or booing in the background depending if the user scores. Unfortunately, due to the steep learning curve and this project being deleted and restarted several times which reduced my time to develop this project more, I was unable to stick to my original plan and create the app as I imagined at the beginning of starting this module on Comparative Programming Languages and JavaScript.
+

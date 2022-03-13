@@ -1,7 +1,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&display=swap');
 
-/*Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, link in Readme file */
+
+/*Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, please see the link in Readme file */
+
+/* Colour scheme modified by me to reflect my colour palette and match the hero image */
 
 /* --------- Global style */
 
@@ -10,14 +13,13 @@
     font-family: Montserrat, sans-serif;
 }
 
-/* SHALL #game-area OR .game-area RATHER BE TARGETED THAN ROOT? */
 :root {
     --hue-neutral: 212;
     --hue-wrong: 0;
     --hue-correct: 145;
 }
 
-/* ORIGINALLY TARGETED body {... */
+/* ORIGIANALLY ELEMENT targeted was body, but modified by me */
 .game-area {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -30,17 +32,17 @@
     background-color: hsl(var(--hue), 100%, 20%);
 }
 
-/* ORIGINAL CLASS TARGETED .body.correct {... */
+/* ORIGINAL CLASS TARGETED .body.correct {... but modified by me*/
 .game-area.correct {
     --hue: var(--hue-correct);
 }
 
-/* ORIGINAL CLASS TARGETED .body.wrong {... */
+/* ORIGINAL CLASS TARGETED .body.wrong {... but modified by me */
 .game-area.wrong {
     --hue: var(--hue-wrong);
 }
 
-/* Game layout */
+/* --------- Game area layout */
 
 .container {
     width: 800px;
@@ -162,7 +164,7 @@ h1 {
     color: white;
 }
 
-/* Code taken and modified from CI Love Running Walkthrough project tutorial */
+/* Code taken and modified from CI Love Running and Love Maths Walkthrough project tutorial */
 
 /* ---------- Media queries */
 
@@ -191,4 +193,30 @@ h1 {
         align-items: center;
     }
 
-}
+} 
+
+/* For small screen sizes from 413px wide and smaller */
+@media screen and (max-width: 413px) {
+    #welcome {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hero {
+        align-items: center;
+    }
+
+} 
+
+/* For small screen sizes from 320px wide */
+@media screen and (max-width: 320px) {
+    #welcome {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #hero {
+        align-items: center;
+    }
+
+} 
