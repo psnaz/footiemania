@@ -198,15 +198,22 @@ The score count feature can monitor the players’ improvement and/or can enable
 
 The W3C Markup Validator, W3C CSS Validator Services, Lighthouse Chrome Extension and JS Hint were used to validate the project page to ensure that there were no syntax errors in the project.
 
-- W3C Markup Validator - Results
-- W3C CSS Validator - Results
-- Lighthouse Chrome Extension - Results
-- [JS HInt](https://jshint.com/) 
+- W3C Markup Validator - Results in the screenshot - see below:
+![W3C Markup Validator screenshot](assets/images/html-validator-results.png)
 
+- W3C CSS Validator - Results in the screenshot - see below:
+![W3C CSS Validator screenshot](assets/images/css-validator-results.png)
+
+- [JS HInt](https://jshint.com/) - Results in the screenshots below:  
+![JS Hint screenshot](assets/images/jshint-results-screenshot1.png)
+
+![JS Hint screenshot](assets/images/jshint-results-screenshot2.png)
 
 --- 
 
 ## Unfixed Bugs
+
+Bugs not fixed in js file due to the lack of time and understanding what exactly needs to be fixed, more time needed.
 
 ---
 

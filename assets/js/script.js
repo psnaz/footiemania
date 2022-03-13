@@ -1,30 +1,33 @@
-/*Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, please see the link in Readme file */
+/**
+ *  Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, 
+ * please see the link in Readme file 
+ * */
 
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainerElement = document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 /**
  * Starts the game when start button's clicked, questions are shuffled and a question gets set
  */
 
 function startGame() {
-    console.log('Started')
-    startButton.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+    console.log('Started');
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
 }
 
 /**
@@ -32,8 +35,8 @@ function startGame() {
  */
 
 function setNextQuestion() {
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 /**
@@ -41,17 +44,17 @@ function setNextQuestion() {
  */
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener ('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener ('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 /**
@@ -59,9 +62,9 @@ function showQuestion(question) {
  */
 
 function resetState() {
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
@@ -72,24 +75,23 @@ function resetState() {
  */
 
 function selectAnswer(e) {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.querySelector("#score"), correct)   //My code
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.querySelector("#score"), correct);   //My code
     if (correct) {                                              //My code
-        incrementScore()                                        // My code
+        incrementScore();                                        // My code
     } else {                                                    // My code
-        incrementWrongAnswer()                                  // My code
+        incrementWrongAnswer();                                  // My code
     }                                                           // My code  
-    setStatusClass(document.querySelector("#game-area"), correct)           
+    setStatusClass(document.querySelector("#game-area"), correct);           
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (shuffledQuestions.length > currentQuestionIndex +1) {
-
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = "Let's play again!"            // My own content
-        startButton.classList.remove('hide')
+        startButton.innerText = "Let's play again!";            // My own content
+        startButton.classList.remove('hide');
     }
 }
 
@@ -99,7 +101,7 @@ function selectAnswer(e) {
  */
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
     } else {
@@ -113,8 +115,8 @@ function setStatusClass(element, correct) {
  */
 
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 /**
@@ -244,4 +246,4 @@ const questions = [
             { text: 'Weston McKennie', correct: false },
         ]
     },
-]
+];
