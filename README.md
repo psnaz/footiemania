@@ -4,9 +4,11 @@
 
 ![Footiemania mockup](assets/images/footiemania-mockup.png)
 
-Do you know that Pele scored more than 1200 goals in his career? Or which country won the first world cup? Yes, it was Uruguay!  So, if facts like these make you smile, let’s play! Press the yellow start button and enjoy testing your own knowledge.
+_Do you know that Pele scored more than 1200 goals in his career? Or which country won the first World Cup?_ Yes, it was Uruguay!
 
-Footiemania is a football quiz application for football enthusiasts of all ages who love everything about this sport, including the generally “boring” stuff like facts about the football players and their backgrounds, the teams, the premier league and various other competitions. But these facts are only boring if you’re not into football. If you are, whether you get excited about chasing the football on the pitch or watching the game from the comfort of your home, get ready and have some fun! 
+If facts like these make you smile, let’s play! Press the yellow start button and enjoy testing your own knowledge.
+
+Footiemania is the perfect football quiz application for football enthusiasts of all ages who love everything about this sport, including the generally “boring stuff" like facts about the football players and their backgrounds, the teams, the premier league and various other competitions. But these facts are only boring if you’re not into football. If you are, whether you get excited about chasing the football on the pitch or watching the game from the comfort of your home, get ready and have some fun! You might even learn something new, you never know. ;-) 
 
 ---
 
@@ -87,15 +89,51 @@ Footiemania is a football quiz application for football enthusiasts of all ages 
 
 ## User Experience (UX)
 
+The target audience (end users) of this project are football enthusiasts of all ages, predominantly boys between 10-14 who _“live and breathe”_ football like my son. 
+
+The end user is looking for a fun way to be entertained while testing and also expanding their knowledge about football.
+
+The benefit of this project is fun and learning at the same time.
+The score count feature can monitor the players’ improvement and/or can enable to enjoy a fun competitive game when socializing at home.
+
 ### User Stories
+
+- As an end user I want to have some fun and learn something new at the same time.
+- As an end user I want to get excited about testing my knowledge  
+- As an end user I want to receive clear instructions to be able to understand what this quiz is about, how to play it and score points.
+- As an end user I want to be able to read and understand the questions and answers easily.
+- As an end user I want to be able to play this quiz game on a variety of devices, like a mobile phone or laptop, but also a desktop.
+
+## Strategy 
+
+### Steps Taken
+
+- Project ideas jotted down in a notepad and a mind map created (pen & paper)
+- Hero image searched for on pixabay.com and unspleash.com
+- Various quizzes researched on Google and Youtube
+- Quiz questions created in cooperation with my 10 year old football savvy son, Martin Snazle, who loves quizzing me on all football and keeps laughing at my lack of knowledge
+- Application outlined, researched and written in Google docs
+- Color palette created in canva.com
+- Mockup design created in canva.com
+- Planning Session 1 with my mentor (Call 1)
+- GitHub repository created [here](https://github.com/psnaz/footiemania)
+- Project broke down into smaller tasks and To-Do List created in Google docs
+- README file content outlined and written in Google docs
+- Building work/ Coding started in Gitpod
+- Project several times deleted and started again 
+- Project Session 2 with my mentor (Call 2) - cancelled and rescheduled 2 or 3 times, in the end cancelled due to the lack of progress at the time and not rescheduled due to the tight deadline 
+- Project finalized, tested
+- Project submitted to the Code Institute for marking
 
 
 ## Technologies Used
 
 ### Languages Used
-*HTML5
-*CSS3
-*Javascript
+- HTML5
+- CSS3
+- JavaScript
+
+
 
 
 
