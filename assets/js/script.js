@@ -22,6 +22,8 @@ nextButton.addEventListener('click', () => {
  */
 
 function startGame() {
+    document.getElementById("score").innerText = 0;
+    document.getElementById("incorrect").innerText = 0;
     console.log('Started');
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
@@ -77,12 +79,16 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    setStatusClass(document.querySelector("#score"), correct);   //My code
-    if (correct) {                                              //My code
-        incrementScore();                                        // My code
-    } else {                                                    // My code
-        incrementWrongAnswer();                                  // My code
-    }                                                           // My code  
+    const button = Array.from(document.getElementsByClassName('btn')) // My code
+    button.forEach(btn => {                                           // My code
+        btn.removeEventListener('click', selectAnswer)                // My code
+    })                                                                // My code
+    setStatusClass(document.querySelector("#score"), correct);   
+    if (correct) {                                                    // My code
+        incrementScore();                                             // My code
+    } else {                                                          // My code
+        incrementWrongAnswer();                                       // My code
+    }                                                           
     setStatusClass(document.querySelector("#game-area"), correct);           
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
