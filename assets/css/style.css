@@ -42,6 +42,13 @@
     --hue: var(--hue-wrong);
 }
 
+/* ADDED BY ME TO BE ABLE TO RESET THE BACKGROUND BACK TO BLUE */
+.game-area.neutral {
+    --hue: var(--hue-neutral);
+}
+
+
+
 /* --------- Game area layout */
 
 .container {

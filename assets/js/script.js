@@ -13,24 +13,28 @@ let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
+    //setBackground(document.querySelector("#game-area"), neutral); RESET TO BLUE!!!!
     currentQuestionIndex++;
-    setNextQuestion();
+    setNextQuestion();    
 });
+
+
 
 /**
  * Starts the game when start button's clicked, questions are shuffled and a question gets set
  */
 
 function startGame() {
-    document.getElementById("score").innerText = 0;
-    document.getElementById("incorrect").innerText = 0;
-    console.log('Started');
+    document.getElementById("score").innerText = 0;       // My code        
+    document.getElementById("incorrect").innerText = 0;   // My code
+    console.log('Started');                               // My code
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
 }
+
 
 /**
  * Sets the next question to be displayed when next button's pressed
@@ -83,7 +87,7 @@ function selectAnswer(e) {
     button.forEach(btn => {                                           // My code
         btn.removeEventListener('click', selectAnswer)                // My code
     })                                                                // My code
-    setStatusClass(document.querySelector("#score"), correct);   
+    setStatusClass(document.querySelector("#score"), correct);        
     if (correct) {                                                    // My code
         incrementScore();                                             // My code
     } else {                                                          // My code
@@ -115,7 +119,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-/**
+/** 
  * Clears the action - 
  * whether correct or incorrect answer has been selected
  */
@@ -123,7 +127,18 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
-}
+} 
+
+
+/**
+ * Resets the background behind the game area 
+ * back to blue - neutral
+ */
+
+function setBackground(element, neutral) {
+    element.classList.add('neutral');
+}   
+
 
 /**
  * Gets the current score from the DOM and increments it by 1
@@ -149,8 +164,9 @@ function incrementScore() {
 }
 
 /**
- * My own content for the questions but code taken and modified from 'Build a Quiz App with JavaScript'by WebDev Simplified 
- *  */ 
+ * My own content for the questions but code taken and modified 
+ * from 'Build a Quiz App with JavaScript'by WebDev Simplified 
+ */ 
 
 const questions = [
     {
