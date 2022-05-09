@@ -12,40 +12,46 @@
     <title>Footiemania</title>
 </head>
 <body>
-    <!-- Heading - code based on my own knowledge and CI walkthrough project tutorials-->
-    <div class="heading">
-        <div class="logo">
-            <h1>Footiemania<img class="logo-ball" src="assets/images/logo.png" alt="logo"></h1>
+    <header>
+         <!-- Heading - code based on my own knowledge and CI walkthrough project tutorials-->
+        <div class="heading">
+            <div class="logo">
+                <h1>Footiemania<img class="logo-ball" src="assets/images/logo.png" alt="logo"></h1>
+            </div>
+            <div id="hero"></div>
+            <div class="welcome" id="welcome">
+                <p>Mad about football? Let's have some fun and test your knowledge about the game!</p>
+            </div>
         </div>
-        <div id="hero"></div>
-        <div class="welcome" id="welcome">
-            <p>Mad about football? Let's have some fun and test your knowledge about the game!</p>
-        </div>
-    </div>
-    <!--Game area-->
-    <div class="game-area" id="game-area">
-        <!--Code for container taken from Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, link in Readme file-->
-        <div class="container" id="container">
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+    </header>
+
+    <main>
+        <!--Game area-->
+        <div class="game-area" id="game-area">
+            <!--Code for container taken from Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, link in Readme file-->
+            <div class="container" id="container">
+                <div id="question-container" class="hide">
+                    <div id="question">Question</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">Start</button>
+                    <button id="next-btn" class="next-btn btn hide">Next</button>
+                </div>
+                <!--Score area - Code for score-area taken from CI Love Maths Walkthrough project-->
+                <div class="score-area">
+                    <p class="scores">Correct Answers: <span id="score">0</span></p>
+                    <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
                 </div>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
-            </div>
-            <!--Score area - Code for score-area taken from CI Love Maths Walkthrough project-->
-            <div class="score-area">
-                <p class="scores">Correct Answers: <span id="score">0</span></p>
-                <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-            </div>
         </div>
-    </div>
+
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
