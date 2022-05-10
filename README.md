@@ -2,7 +2,7 @@
 
 ## Welcome to Footiemania, the online quiz for people who LOVE all about football, including the facts!
 
-![Footiemania mockup](assets/images/footiemania-mockup.png)
+![Footiemania mockup](docs/images/footiemania-mockup.png)
 
 _Do you know that Pele scored more than 1200 goals in his career? Or which country won the first World Cup?_ Yes, it was Uruguay!
 
@@ -25,7 +25,7 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 ### Logo Area
 - The top of the page includes a green logo area.
 
-![Logo area screenshot](assets/images/logo-area.png)
+![Logo area screenshot](docs/images/logo-area.png)
 
 
 ###  Landing Page Image
@@ -37,14 +37,14 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 ### Tagline
 - Below the hero image is a welcoming tagline that should entice the user to start playing this quiz.
 
-![Tagline screenshot](assets/images/tagline.png)
+![Tagline screenshot](docs/images/tagline.png)
 
 
 ### Game Area Displayed Before Start
 
 - The bottom part of the screen is dedicated to the responsive part of the game area. It includes a yellow START button and below score count set to 0 for both, correct and incorrect answers.
 
-![Game area screenshot](assets/images/game-area.png)
+![Game area screenshot](docs/images/game-area.png)
 
 
 ### Question Area
@@ -52,39 +52,52 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 #### Question Area Displayed Once START Button Displayed
 - Once the start button's pressed, a white question area appears. It includes a quiz question and 4 interactive light blue buttons with a choice of answers.
 
-![Question area screenshot](assets/images/question-area-start.png)
+![Question area screenshot](docs/images/question-area-start.png)
 
 
 #### Question Area - CORRECT ANSWER DISPLAYED
-- When the user clicks one of the blue answer buttons and chooses the correct answer the answer buttons change colour: the correct answer button turns green, the rest of the answer buttons for wrong answers turn red. Also, the game area background colour turns green to indicate the success.
+- When the user clicks one of the blue answer buttons and chooses the correct answer the correct answer button turns green. Also, the game area background colour turns green to indicate the success.
 - At the same time, yellow button NEXT appears and the score in the correct answers increases by 1.
 
-![Question area with a correct answer screenshot](assets/images/correct-answer.png)
+![Question area with a correct answer screenshot](docs/images/correct-answer.jpeg)
 
 #### Question Area - WRONG ANSWER DISPLAYED
-- When the user clicks one of the blue answer buttons and chooses a wrong answer the answer buttons change colour: the correct answer button turns green, the rest of the answer buttons for wrong answers turn red. Also, the game area background colour turns red to indicate that a wrong answer's been chosen.
+- When the user clicks one of the blue answer buttons and chooses a wrong answer the answer buttons change colour: the wrong answer button clicked turns red but the correct answer button turns green (to indicate what was the correct answer). The rest of the answer buttons for wrong answers stay blue. Also, the game area background colour turns red to indicate that a wrong answer's been chosen.
 - At the same time, yellow button NEXT appears and the score in the incorrect answers increases by 1.
 
-![Question area with a wrong answer screenshot](assets/images/wrong-answer.png)
+![Question area with a wrong answer screenshot](docs/images/wrong-answer.jpeg)
 
 
 ### Next Button
 - To be able to proceed to the next question the user has to press the NEXT yellow button. 
-- When the NEXT button is pressed, the next question is displayed. 
 
-![Next button screenshot](assets/images/next-button.png)
+
+![Next button screenshot](docs/images/next-button.png)
+
+- When the NEXT button is pressed, the next question is displayed and the game area background turns blue again.
+
+![New question screenshot](docs/images/new-question.jpeg)
 
 
 ### Score Area
 - The score area is there to count the score that increases or decreases always by 1 depending if the user chooses a correct or incorrect answer.
 
-![Score area screenshot](assets/images/score-area.png)
+![Score area screenshot](docs/images/score-area.png)
+
+
+### Let's Play Again Button
+
+- When the player gets to the last question, a yellow "Let's play again" button appears.
+
+![Let's play again screenshot](docs/images/lets-play-again.jpeg)
+
+- When the player clicks this button, the score count resets to 0 and the game starts again.
 
 
 ### QUESTIONS
 
 - There are currently 11 questions only stored in the js file of the quiz game.
-- Potentially, hundreds of questions could be added to this game.
+- Potentially, hundreds of questions could be added to this game and the amount of questions remaining could be indicated by added feature.
 
 ---
 
@@ -118,7 +131,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 
 - Colour palette created in canva.com
 
-![Color palette screenshot](assets/images/colour-palette.png)
+![Color palette screenshot](docs/images/colour-palette.png)
 
 - Mockup design created in canva.com and can be viewed [here.](https://www.canva.com/design/DAE435igaz4/8yfnZsaV_IAiWw6dCBzHgQ/edit?utm_content=DAE435igaz4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
@@ -179,7 +192,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 
 ### Media
 
-- Hero image taken by ![Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
+- Hero image taken by [Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
  downloaded from unspleash.com
 
 
@@ -188,6 +201,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 - My ten year old son, Martin Snazle, who loves football more than anything, and who also loves quizzing me on football and laugh when I don’t know much. I treasure those moments!
 
 - My Mentor Celestine Okoro for his helpful feedback.
+- My 2nd Mentor Guido Cecilio for his patience and great insights.
 - Tutor support at Code Institute for their support.
 - Stephen Seagrave for his most valuable advice recorded as [Milestone 1 Planning with Stephen Seagrave.](https://www.youtube.com/watch?v=06tXTbm-DxI&feature=youtu.be)
 - Code Institute Slack Community for all their advice and support.
