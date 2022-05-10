@@ -13,7 +13,7 @@ let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    restoreBackground();
+    restoreBackground();                     // My code added
     currentQuestionIndex++;
     setNextQuestion();
 });
@@ -23,9 +23,9 @@ nextButton.addEventListener('click', () => {
  * Starts the game when start button's clicked, questions are shuffled and a question gets set
  */
 function startGame() {
-    document.getElementById("score").innerText = 0; // My code        
-    document.getElementById("incorrect").innerText = 0; // My code
-    console.log('Started'); // My code
+    restoreBackground(); // My code added 
+    document.getElementById("score").innerText = 0; // My code added       
+    document.getElementById("incorrect").innerText = 0; // My code added 
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -37,7 +37,6 @@ function startGame() {
 /**
  * Sets the next question to be displayed when next button's pressed
  */
-
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -46,7 +45,6 @@ function setNextQuestion() {
 /**
  * Displays question and enables the buttons to indicate correct or incorrect answers 
  */
-
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -64,7 +62,6 @@ function showQuestion(question) {
 /**
  * Enables the next button to reset the question area to display the next question
  */
-
 function resetState() {
     nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
@@ -83,24 +80,24 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct;
     const buttons = Array.from(document.getElementsByClassName('btn')) // My code
 
-    // Set the color to the selected answer
+    // Sets the colour to the selected answer
     setStatusClass(selectedButton, correct);
 
     buttons.forEach((btn) => { // My code
         btn.removeEventListener('click', selectAnswer);
-        // We turn green the correct answer when the select was wrong
+        // Turns the correct answer green despite the player's selected answer being wrong
         if (!correct && btn.dataset.correct) {
             setStatusClass(btn, btn.dataset.correct);
         }
     });
-
-    if (correct) { // My code
-        incrementScore(); // My code
-    } else { // My code
-        incrementWrongAnswer(); // My code
+    // Increases the score - my code
+    if (correct) { 
+        incrementScore();
+    } else { 
+        incrementWrongAnswer(); 
     }
 
-    // Set background color based on the answer
+    // Sets the background colour based on the answer
     setStatusClass(gameArea, correct);
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
@@ -115,7 +112,6 @@ function selectAnswer(e) {
  * Determines whether the correct answer button 
  * has been selected by the user
  */
-
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -129,17 +125,16 @@ function setStatusClass(element, correct) {
  * Clears the action - 
  * whether correct or incorrect answer has been selected
  */
-
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
-    element.classList.remove('neutral');
+    element.classList.remove('neutral');  // My code
 }
 
 
 /**
  * Resets the background behind the game area 
- * back to blue - neutral
+ * back to blue - neutral -- my code
  */
 function restoreBackground() {
     gameArea.classList.add('neutral');
@@ -159,7 +154,6 @@ function incrementScore() {
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  *  - code from CI Love Maths Walkthrough Project
  */
-
 function incrementWrongAnswer() {
     let oldscore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldscore;
