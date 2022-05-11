@@ -1,5 +1,6 @@
 /**
- *  Code based on Youtube tutorial 'Build a Quiz App with JavaScript'by WebDev Simplified - coded along, 
+ *  Code based on Youtube tutorial 'Build a Quiz App with JavaScript'
+ * by WebDev Simplified - coded along, 
  * please see the link in Readme file 
  * */
 const startButton = document.getElementById('start-btn');
@@ -20,7 +21,8 @@ nextButton.addEventListener('click', () => {
 
 
 /**
- * Starts the game when start button's clicked, questions are shuffled and a question gets set
+ * Starts the game when start button's clicked, questions are shuffled 
+ * and a question gets set
  */
 function startGame() {
     restoreBackground(); // My code added 
