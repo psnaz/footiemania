@@ -50,18 +50,22 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 ### Question Area
 
 #### Question Area Displayed Once START Button Displayed
+
 - Once the start button's pressed, a white question area appears. It includes a quiz question and 4 interactive light blue buttons with a choice of answers.
 
 ![Question area screenshot](docs/images/question-area-start.png)
 
 
 #### Question Area - CORRECT ANSWER DISPLAYED
+
 - When the user clicks one of the blue answer buttons and chooses the correct answer the correct answer button turns green. Also, the game area background colour turns green to indicate the success.
 - At the same time, yellow button NEXT appears and the score in the correct answers increases by 1.
 
 ![Question area with a correct answer screenshot](docs/images/correct-answer.jpeg)
 
+
 #### Question Area - WRONG ANSWER DISPLAYED
+
 - When the user clicks one of the blue answer buttons and chooses a wrong answer the answer buttons change colour: the wrong answer button clicked turns red but the correct answer button turns green (to indicate what was the correct answer). The rest of the answer buttons for wrong answers stay blue. Also, the game area background colour turns red to indicate that a wrong answer's been chosen.
 - At the same time, yellow button NEXT appears and the score in the incorrect answers increases by 1.
 
@@ -69,6 +73,7 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 
 
 ### Next Button
+
 - To be able to proceed to the next question the user has to press the NEXT yellow button. 
 
 
@@ -80,6 +85,7 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 
 
 ### Score Area
+
 - The score area is there to count the score that increases or decreases always by 1 depending if the user chooses a correct or incorrect answer.
 
 ![Score area screenshot](docs/images/score-area.png)
@@ -92,6 +98,8 @@ Footiemania is the perfect football quiz application for football enthusiasts of
 ![Let's play again screenshot](docs/images/lets-play-again.jpeg)
 
 - When the player clicks this button, the score count resets to 0 and the game starts again.
+
+![Score reset screenshot](docs/images/score-reset.jpeg)
 
 
 ### QUESTIONS
@@ -145,6 +153,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 - Project finalized, tested
 - Project submitted to the Code Institute for marking
 
+---
 
 ## Technologies Used
 
@@ -213,21 +222,26 @@ The score count feature can monitor the players’ improvement and/or can enable
 The W3C Markup Validator, W3C CSS Validator Services, Lighthouse Chrome Extension and JS Hint were used to validate the project page to ensure that there were no syntax errors in the project.
 
 - W3C Markup Validator - Results in the screenshot - see below:
-![W3C Markup Validator screenshot](assets/images/html-validator-results.png)
+
+![W3C Markup Validator screenshot](docs/images/html-validator-results.png)
 
 - W3C CSS Validator - Results in the screenshot - see below:
-![W3C CSS Validator screenshot](assets/images/css-validator-results.png)
 
-- [JS HInt](https://jshint.com/) - Results in the screenshots below:  
-![JS Hint screenshot](assets/images/jshint-results-screenshot1.png)
+![W3C CSS Validator screenshot](docs/images/css-validator-results.png)
 
-![JS Hint screenshot](assets/images/jshint-results-screenshot2.png)
+![W3C CSS Validator screenshot](docs/images/css-warnings.png)
+
+- [JS HInt](https://jshint.com/) - Results in the screenshots below:
+
+![JS Hint screenshot](docs/images/jshint-results1.png)
+
+![JS Hint screenshot](docs/images/jshint-results2.png)
 
 --- 
 
 ## Unfixed Bugs
 
-Bugs not fixed in js file due to the lack of time and understanding what exactly needs to be fixed, more time needed.
+Bugs indicated by JS Hint not fixed in js file due to the lack of time and understanding what exactly needs to be fixed, more time needed.
 
 ---
 
@@ -253,4 +267,12 @@ If you are interested how to fork this repository or how to make a local clone, 
 This project has been a very steep learning curve. Although I find the JavaScript principle understandable to use JavaScript in practice and write my own code at this point is very challenging for me. I understand that I will have to practise a lot to feel confident using it and to become a proper JavaScript user. 
 
 My original plan was to create an interactive football quiz with sound effects like the football fans cheering or booing in the background depending if the user scores. Unfortunately, due to the steep learning curve and this project being deleted and restarted several times which reduced my time to develop this project more, I was unable to stick to my original plan and create the app as I imagined at the beginning of starting this module on Comparative Programming Languages and JavaScript.
+
+---
+
+## RESUBMISSION NOTES
+
+As per the assessor's advice I have added HEADER, MAIN and SECTION tags to the HTML, however the section tag was replace by DIV as indicated by the Html Validator, please see the screenshot below.
+
+![W3C Markup Validator warning](docs/images/section-renamed.png)
 
