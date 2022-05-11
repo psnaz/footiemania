@@ -165,7 +165,7 @@ The score count feature can monitor the players’ improvement and/or can enable
 ### Frameworks, Libraries and Programs Used
 
 
-- unsplash.com: Unsplash was used to find the hero image: image used taken by ![Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
+- unsplash.com: Unsplash was used to find the hero image: image used taken by [Lars Bo Nielsen](https://unsplash.com/photos/Wu7hYE7Lzzs)  
 - Canva.com: Canva Color Palette Generator was used to create a color palette and Canva was used to create a mock-up design, and for resizing and editing images.
 - Google Fonts: Google fonts were used to import the ‘Black Ops One’ and ‘Montserrat light 400’ fonts into the style.css files. 
 - Git: Git was used for version control by utilizing the Gitpod terminal - to commit to Git and push to GitHub
